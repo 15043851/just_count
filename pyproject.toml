@@ -8,6 +8,7 @@ packages = [{include = "just_count", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
+square = "^0.0.3"
 
 
 [build-system]
