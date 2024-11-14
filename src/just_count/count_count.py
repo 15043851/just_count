@@ -1,6 +1,10 @@
 from just_count.square import square
+import click
 
-def main():
-    print(f"The square of 5 is {square(5)}")
+@click.command()
+@click.argument("number", type=int)
+def main(number):
+    print(f"The square of {number} is {square(number)}")
 
-
+if __name__ == '__main__':
+    main()
